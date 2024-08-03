@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js">
+      console.log(`This will not work`);
+    </script>
+    <!-- 3. External JS.Note, any code between the opening and closing tags will be ignored  -->
+
+    <script>
+      /* 2. Embedded JS */
+    </script>
+    <style>
+      .valid {
+        /* change border to green */
+      }
+      .invalid {
+        /* change border to red */
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" class="form" onsubmit="return false">
+      <input type="text" placeholder="username" id="username" />
+      <input type="password" id="password" />
+      <button onclick="handleSubmission()" type="button">
+        HANDLE SUBMISSION</button
+      ><!-- 1. This is inline JS -->
+    </form>
+    <p id="output">Some text</p>
+  </body>
+</html>
