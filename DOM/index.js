@@ -39,6 +39,6 @@ function handleSubmission() {
 
 /* What are the various ways of selecting elements
    // > getElementByID; getElelememtsByTagName, .... */
-// > getElementByID; getElelememtsByTagName, .... */
+// > getElementByID; getElelementsByTagName, .... */
 
 /* Collections of Nodes: iteration, createing elements dynamically*/
