@@ -1,0 +1,8 @@
+If Math.random() generates 0.458, then:
+
+0.458 * 91 gives approximately 41.678.
+
+Math.floor(41.678) results in 41.
+Adding 10 gives 41 + 10 = 51.
+
+Thus, Math.floor(Math.random() * (100 - 10 + 1)) + 10 would output 51.

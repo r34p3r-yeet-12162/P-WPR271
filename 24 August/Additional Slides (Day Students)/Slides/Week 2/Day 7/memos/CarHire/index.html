@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Hire Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Hire Booking</h1>
+        <form id="carHireForm">
+            <label for="carModel">Car Model:</label>
+            <input type="text" id="carModel" name="carModel" required><br>
+            <label for="hireDate">Hire Date:</label>
+            <input type="date" id="hireDate" name="hireDate" required><br>
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate" required><br>
+            <label for="dailyRate">Daily Rate:</label>
+            <input type="number" id="dailyRate" name="dailyRate" required><br>
+            <button type="submit">Add Booking</button>
+        </form>
+        <div id="myContainer">
+            <h2>Car Booking Summary</h2>
+            <p id="carBooking"></p><br><br><br>
+        </div>
+        <div id="tableContainer">
+            <h2>Car Booking Receipt</h2>
+            <!-- Table will be dynamically created here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
