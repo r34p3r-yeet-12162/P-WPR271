@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Modals are windows that pop off the document to receive input, provide feedback, or to seek confirmation  -->
+
+    <!-- These modals tend to block execution -->
+    <script>
+      /* 1. prompt; we will also couple it with type conversions */
+      let age = prompt("What is your age?");
+      //types: prompt always returns a string, so even if you provided a number it will be a numerical string (a number on quotation marks)
+      // if the expected value is NUMBER, then we have to do explicit type conversion.
+
+      /* conversions:
+        1. Use the Number type constructor
+            let returnedNumVal = Number(strVal)
+
+        2. Use the parse* method 
+        conversions:
+            let returnedNumVal = parseInt(strVal, targetBase): the target base is the radix. A number can be written in binary (base2) base3, etc. By default, it uses base 10
+       
+        3. Multiplication by 1
+        conversions:
+            let returnedNumVal = strVal * 1: multiplying by 1 forces the operand (strVal) to be converted to a number first
+      */
+      alert("Before conversion: " + typeof age);
+      //age = Number(age);
+      //age = parseInt(age);
+      age = age * 1;
+      alert("After conversion: " + typeof age);
+
+      /* 2. confirm: returns a bool depending on the button that was pressed in the dialog box.
+      true is returned is OK is clicked, and false when CANCEL  is clicked */
+      let res = confirm(`Are you sure that your age is ${age}`);
+
+      /* 3. alert: this modal is only for passing information to the user */
+      /*   if (res) {
+        alert(`Confirmed, your age is ${age}`);
+      } else {
+        alert(`You did not confirm your age, refresh to start again`);
+      } */
+      res === true
+        ? alert(`Confirmed, your age is ${age}`)
+        : alert(`You did not confirm your age, refresh to start again`);
+
+      /* Example 2: Suppose we want to prompt a user for x amount of numbers. We also want to check if each of the numbers if odd or even 
+      The results must be computed at the end i.e collect the numbers first, evaluate, then give feedback at the end.*/
+    </script>
+  </body>
+</html>
