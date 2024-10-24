@@ -15,3 +15,5 @@ let constructorArrWithInitialValues = new Array(3, 3); // the array has a length
 let str = "John";
 let arrFrom = Array.from(str); //
 console.log(str[0]); // logs 'J'
+
+const foo = "bar";
